@@ -1,9 +1,10 @@
 import { React } from 'react';
 import './App.scss';
+import DisplayList from './components/displayList';
 
-const App = () =>
+const App = (context) =>
 	<div className="App" role="App">
-		Ready to start.
+		<div>{	DisplayList(context) }</div>
 	</div>;
 
 export default App;
