@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 const config = {
 	data: [
-		10, 5, 2, 0, 6, 8, 4,
+		1.0, 0.55, 0.2, 0, 0.6, 0.008, 0.44,
 	],
 };
 

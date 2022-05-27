@@ -1,7 +1,8 @@
+/* eslint-disable no-magic-numbers */
 import { React } from 'react';
-import color from '../service/colourManager';
+import mixColor from '../services/mixColor';
 
-const DisplayList = (context) => {
+const displayData = (context) => {
 	const { config: { data }} = context;
 
 	return (
@@ -9,7 +10,9 @@ const DisplayList = (context) => {
 			const style = {
 				width: '50px',
 				height: '100px',
-				backgroundColor: color(num),
+				background: mixColor(
+					'#ffff66', '#003366', num
+				),
 			};
 
 			return (
@@ -18,4 +21,4 @@ const DisplayList = (context) => {
 	);
 };
 
-export default DisplayList;
+export default displayData;
